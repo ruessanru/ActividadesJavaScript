@@ -13,9 +13,10 @@
 - Modifica el último console.log del entrypoint index.js para devolver el resultado en color verde*/
 import  * as moduloController from './modulos/controller.js'
 import chalk from 'chalk';
+const sum1=moduloController.suma(1,2);
+const sum2 =moduloController.suma(4,5);
+const mult=moduloController.multiplica(sum1,sum2);
+console.log(sum1);
+console.log(sum2);
 
-const mult=moduloController.multiplica(1,2);
-console.log(mult);
-
-const sum =moduloController.suma(4,5);
-console.log(chalk.green(sum));
+console.log(chalk.green(mult));
